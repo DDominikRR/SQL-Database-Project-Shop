@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E3BE2BF5-B0DC-3B69-F4EE-9D9FA76D2321" name="ym_kategoria">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:07:31 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_kategorii" id="945919E7-4C3E-5021-574A-A8F9FBD41D53">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:08:49 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa_kategorii" id="222EF166-9718-6AF1-48E9-60CE51B18615">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:09:05 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0C9D7D70-865B-85C4-CFC2-BB71C9A45083" name="ym_kategoria PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:09:01 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>945919E7-4C3E-5021-574A-A8F9FBD41D53</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

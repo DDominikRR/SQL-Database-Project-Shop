@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A2A8F49-400B-78A0-8057-77F1BE2CDC67" name="ym_pozycje_rachunku">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:04:48 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pozycji" id="CA89D5C1-8612-1BF0-271C-037F551B5CD8">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:06:16 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ilosc_pozycji" id="5E0BD435-7288-7B1E-1B75-0D57F1F396F6">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:06:16 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_produktu" id="93C34C17-4549-3055-45D6-826F7142FA1B">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:09:02 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0CB6EE8-3B77-8337-0FDA-B2C384957945" referredColumn="E434836B-A6F4-E67D-7D72-6105398E3CFE"/>
+</associations>
+</Column>
+<Column name="id_rachunku" id="CC3BC3CF-A9C1-7DAD-BCAC-C7029D060126">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:18:24 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="969F2AD9-0BCD-5D28-E8C8-B8D2A3E1FC62" referredColumn="1ADD7A84-0574-08E4-3588-0F3656CDFFF6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18D856EB-D2DB-C2C9-9CC3-96C9CE2421A3" name="ym_pozycje_rachunku_PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:06:16 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA89D5C1-8612-1BF0-271C-037F551B5CD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB3E5E64-9BE3-80ED-828E-C7C518302C28" name="ym_pozycje_rachunku_ym_produkt_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:09:02 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93C34C17-4549-3055-45D6-826F7142FA1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2175100-3A4D-6779-1873-2D349940B694" name="ym_pozycje_rachunku_ym_rachunek_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:18:24 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC3BC3CF-A9C1-7DAD-BCAC-C7029D060126"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

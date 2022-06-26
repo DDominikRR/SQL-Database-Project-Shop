@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="kat_prod" directorySegmentName="seg_0" id="4463EF0A-99C1-C49C-0D3D-80EBBF608C00">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:41:56 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<sourcePk>0C9D7D70-865B-85C4-CFC2-BB71C9A45083</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E3BE2BF5-B0DC-3B69-F4EE-9D9FA76D2321</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8FC13F0F-BDA4-5AF0-31C0-B574B8D9C303</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

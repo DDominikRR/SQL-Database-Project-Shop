@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CCD5921B-7436-5C41-F113-D8085405604F" name="ym_zamowienie">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:15:47 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zamowienia" id="A9C1126C-5916-234D-3FE1-468740D6884F">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:15:57 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_zamowienia" id="3103F7DE-F8BF-9873-910A-7CF06623AD2B">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:16:11 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_zamowienia" id="F39AA4F8-EB96-48E3-56EA-5BD8CBDCCE1C">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:16:34 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_klienta" id="36FF7027-848D-35D0-AD20-A091537F3F43">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:44:35 UTC</createdTime>
+<generatorID>CC54BC29-3ECF-9FE1-B52A-1D0B28BB37A1</generatorID>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<referedAttribute>74FD9A4C-7F32-EF52-FE85-DB1206AD03BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pracownika" id="9A48CDF7-ED17-6295-DA3F-957F6B355D95">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:45:02 UTC</createdTime>
+<generatorID>AA827638-2261-C499-674B-EC67657D3983</generatorID>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<referedAttribute>6A80E419-D542-7000-58F5-747FEF5014D4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_rachunku" id="8E2B32F3-3611-730F-B4BA-D9415D025121">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 04:27:21 UTC</createdTime>
+<generatorID>C46913A9-731C-CEED-6CD3-BCF366D805D5</generatorID>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<referedAttribute>2BFEAAEA-A448-D20B-5281-8DD512B93536</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C9B6944A-6AB9-B143-51B0-989DBB94FA2B" name="ym_zamowienie PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:16:09 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9C1126C-5916-234D-3FE1-468740D6884F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

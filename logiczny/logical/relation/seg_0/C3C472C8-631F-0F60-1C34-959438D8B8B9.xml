@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="klie_rach" directorySegmentName="seg_0" id="C3C472C8-631F-0F60-1C34-959438D8B8B9">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:44:00 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<sourcePk>063A3F57-0468-B8DD-C99B-D8CDE27BB170</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>45FEAF7A-4102-34B3-1F17-7B05878F4585</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B353794B-A7E9-40B3-0A20-181D89B8CC4D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

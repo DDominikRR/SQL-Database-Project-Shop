@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9E0E66A-D568-0123-2011-2EDCBAF23D17" name="ym_produkt">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:55:00 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produktu" id="E434836B-A6F4-E67D-7D72-6105398E3CFE">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:55:57 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa_produktu" id="D5657D82-D9F2-39E8-EEA9-5EE8CC806F52">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:55:57 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kraj_pochodzenia" id="1D0A35FA-525F-9555-3117-FEF4020BC869">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 14:00:34 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="producent" id="31A30E7D-A43E-9095-5521-229CB1173352">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 14:01:21 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="podkategoria" id="C2FD03C7-7676-F435-D9A7-256C8263F916">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 14:01:21 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_kategorii" id="49935E3D-AD09-35BB-4849-DC1164BF0D7E">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:10:47 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0107F18-3D2E-B281-3F7D-5982C6AE48E9" referredColumn="FF5DF28E-D504-69A7-B906-32ED9A5AB200"/>
+</associations>
+</Column>
+<Column name="cena_produktu" id="735CFE03-1A7E-AB90-9479-CC6323AAF1F6">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 14:02:21 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="masa_produktu" id="4E42064F-45DE-8A44-4F08-1E512F414772">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 14:02:21 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B28A942B-C245-E39D-3EAE-5A3A1ABA4F0F" name="ym_produkt_PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:55:57 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E434836B-A6F4-E67D-7D72-6105398E3CFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5250FA11-1A4F-9DCD-7A6E-398866B86AB5" name="ym_produkt_ym_kategoria_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:10:47 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49935E3D-AD09-35BB-4849-DC1164BF0D7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="adr_kli" directorySegmentName="seg_0" id="F7B88260-4FFE-5A7D-E9EA-B14353DEC48F">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:50:39 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<sourcePk>FC8C70AD-668E-8C88-B9D3-15C81BDC0056</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AD1727D5-3153-1C44-ADB5-DFDDD7C29565</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>45FEAF7A-4102-34B3-1F17-7B05878F4585</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

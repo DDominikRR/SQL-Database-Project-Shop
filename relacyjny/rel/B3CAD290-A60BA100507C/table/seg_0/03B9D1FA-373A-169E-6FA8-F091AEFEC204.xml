@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03B9D1FA-373A-169E-6FA8-F091AEFEC204" name="ym_klient">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:19:54 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_klienta" id="7BFEB384-BE4B-3283-3FA4-6054FE337051">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:21:15 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imie_klienta" id="34CE4D50-E099-4A29-6567-594218707EA7">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:21:15 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwisko_klienta" id="D8C2A1DA-8D2E-974C-E8A8-645576280642">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:21:15 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_klienta" id="7CAF8946-CE41-3819-C38F-DEB3453931D2">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:21:15 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_adresu" id="76BA280B-B132-6E25-01C0-F37796FC0B58">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:53:43 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F305BCD-23F2-1F48-03A4-5997485CD1AA" referredColumn="96715C47-55D3-C4F6-B37A-7A6D28F332A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F89317C-CF6A-9BFA-F891-A726F3C5DE3D" name="ym_klient_PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:21:15 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BFEB384-BE4B-3283-3FA4-6054FE337051"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87F6905A-055F-025C-1F2C-6DEFD12821B2" name="ym_klient_ym_adres_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:53:43 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76BA280B-B132-6E25-01C0-F37796FC0B58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

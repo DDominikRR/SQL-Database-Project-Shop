@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pra_zam" directorySegmentName="seg_0" id="AA827638-2261-C499-674B-EC67657D3983">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:45:02 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<sourcePk>313A85C7-DCEF-8735-3783-0211C451FA60</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC43D440-B9B4-29FC-060B-D106E8404B7E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CCD5921B-7436-5C41-F113-D8085405604F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

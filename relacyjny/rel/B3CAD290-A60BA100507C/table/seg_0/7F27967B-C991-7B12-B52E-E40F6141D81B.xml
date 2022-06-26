@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F27967B-C991-7B12-B52E-E40F6141D81B" name="ym_zamowienie">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:36:29 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zamowienia" id="1C071A5C-762F-CF03-762C-286169DD1EB3">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:42:51 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_zamowienia" id="A9EBDE77-DC26-011B-D2A9-3B982C4529AC">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:42:51 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_zamowienia" id="E0C0CB4F-CFC1-5939-41A0-AD9A77DC7580">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:42:51 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pracownika" id="99033102-7E93-A61F-ACCD-C17E29AC08C0">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:44:27 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D1CE7B4-0069-310A-B477-7B50C84E011E" referredColumn="7FE384EE-0DD5-E2FD-3C78-43F5C2FDC342"/>
+</associations>
+</Column>
+<Column name="id_klienta" id="CBEEFBF6-88DF-F309-72D3-E4FB1A8F0620">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:46:22 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9338A464-4719-D67A-17F7-CA9EE4D076C3" referredColumn="7BFEB384-BE4B-3283-3FA4-6054FE337051"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF464EBC-0968-397B-0859-4A09DED7FB30" name="ym_zamowienie_PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:42:51 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C071A5C-762F-CF03-762C-286169DD1EB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E3A74F8-313D-C58F-3B0D-9D2EF6056B63" name="ym_zamowienie_ym_pracownik_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:44:27 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99033102-7E93-A61F-ACCD-C17E29AC08C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="371B69D5-88EE-C27C-A59B-09B5C614F6E2" name="ym_zamowienie_ym_klient_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:46:22 UTC</createdTime>
+<ownerDesignName>relacyjny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBEEFBF6-88DF-F309-72D3-E4FB1A8F0620"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="prod_poz" directorySegmentName="seg_0" id="B918F911-F394-CFB7-8AD1-A37123F2F17C">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:42:42 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<sourcePk>C0363D3F-00D1-1863-F0A5-858368F464BC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8FC13F0F-BDA4-5AF0-31C0-B574B8D9C303</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>21101DD5-1CCD-BC1B-B716-4A211D41B6E2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

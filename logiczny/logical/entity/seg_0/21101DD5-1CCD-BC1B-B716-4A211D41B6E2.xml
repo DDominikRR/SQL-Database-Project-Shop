@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="21101DD5-1CCD-BC1B-B716-4A211D41B6E2" name="ym_pozycje_rachunku">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:35:40 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pozycji" id="B1295622-314B-807C-44C5-473D31912EF0">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:35:48 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ilosc_pozycji" id="6B21723C-BA82-5020-7C39-23F8EDE29755">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:36:51 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_produktu" id="B4FFA257-28E0-AB86-8F27-A8F800D15C4B">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:42:42 UTC</createdTime>
+<generatorID>B918F911-F394-CFB7-8AD1-A37123F2F17C</generatorID>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<referedAttribute>427B1F54-72E0-A040-86F1-2D6CDB0AC009</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_rachunku" id="9C8F6943-8DF3-92DF-0048-6F04378EF2FA">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:43:51 UTC</createdTime>
+<generatorID>BDF1C44D-64FA-9563-93EE-74F207D7694A</generatorID>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<referedAttribute>2BFEAAEA-A448-D20B-5281-8DD512B93536</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E1C5C1D-E823-0F2E-B918-9722D594F1D2" name="ym_pozycje_rachunku PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 00:36:14 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<engineerTo>
+<item key="B3CAD290-3E50-67A1-1E89-A60BA100507C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B1295622-314B-807C-44C5-473D31912EF0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

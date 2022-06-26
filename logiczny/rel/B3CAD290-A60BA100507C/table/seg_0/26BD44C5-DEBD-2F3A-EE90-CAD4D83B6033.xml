@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26BD44C5-DEBD-2F3A-EE90-CAD4D83B6033" name="ym_rachunek">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:16:57 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rachunku" id="1ADD7A84-0574-08E4-3588-0F3656CDFFF6">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:18:18 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_rachunku" id="EA2A380F-2BEB-1D3E-C76A-716A0F6E6584">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:18:18 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_klienta" id="23E30DFA-E51F-9384-4E04-D6B8EB9F14A3">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:21:24 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9708E625-DE00-1430-371C-6DB9EFC0C1B6" referredColumn="7BFEB384-BE4B-3283-3FA4-6054FE337051"/>
+</associations>
+</Column>
+<Column name="id_zamowienia" id="5510C61C-9088-1751-44CB-910D4822FF64">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 14:03:03 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD17D547-5010-F1DB-1FE7-BDC544DC376B" referredColumn="1C071A5C-762F-CF03-762C-286169DD1EB3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A81DEC12-96C4-D478-D458-B1686831C0F5" name="ym_rachunek_PK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:18:18 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ADD7A84-0574-08E4-3588-0F3656CDFFF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="613560D7-ED6A-083D-556D-D1686543442E" name="ym_rachunek_ym_klient_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 01:21:24 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23E30DFA-E51F-9384-4E04-D6B8EB9F14A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="088FE38F-66F0-D282-C1C5-3A58766192CB" name="ym_rachunek_ym_zamowienie_FK">
+<createdBy>domin</createdBy>
+<createdTime>2022-01-31 14:03:03 UTC</createdTime>
+<ownerDesignName>logiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5510C61C-9088-1751-44CB-910D4822FF64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
